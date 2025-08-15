@@ -34,15 +34,13 @@ ffufx -u https://example.com/FUZZ -w wordlist.txt
 
 # Fuzz with custom matchers and filters
 ffufx -u https://test.example.com/FUZZ -w paths.txt -mc 200,301,302 -fs 1234
+```
 
 ## Output
 
 Results are automatically saved to a file named `ffufx_<domain>` in the current directory.
 
-For example, if fuzzing `https://test.example.com/FUZZ`, results will be stored in:
-```
-ffufx_test.example.com
-```
+For example, if fuzzing `https://test.example.com/FUZZ`, results will be stored in ffufx_test.example.com
 
 Each line contains:
 ```
